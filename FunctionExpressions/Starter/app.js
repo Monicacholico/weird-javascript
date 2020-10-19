@@ -19,7 +19,7 @@ function log(a){ //function expresion that you can pass functions
 // log(3);
 // log('Hello');
 // log({ greeting: 'hi'});
-log(function(){
+log(function(){ // first class functions
     console.log('hi!');
 });
 
