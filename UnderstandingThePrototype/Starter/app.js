@@ -15,3 +15,25 @@ var john = {
 // don't do this EVER! for demo purposess only !!!!
 
 john.__proto__ = person;
+console.log(john.getFullName());
+console.log(john.firstname);
+
+for (var prop in john) {
+    if(john.hasOwnProperty(prop)){
+        console.log(prop + ': ' + john[prop]);
+    }
+}
+
+var jane = {
+    address: '111 Main St',
+    getFormalFullName: function() {
+        return this.lastname + ' ' + this.firstname
+    }
+}
+
+var jim = {
+    getFirstname: function() {
+        return firstname;
+    }
+}
+
